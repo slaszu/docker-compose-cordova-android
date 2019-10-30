@@ -1,0 +1,10 @@
+version: "3.0"
+
+services:
+    cordova:
+        build:
+            context: beevelop_cordova
+        container_name: cordova
+        volumes:
+            - ./build:/tmp
+        command : tail -F anything
