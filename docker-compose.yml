@@ -8,3 +8,5 @@ services:
         volumes:
             - ./build:/tmp
         command : tail -F anything
+        ports:
+            - 8000:8000

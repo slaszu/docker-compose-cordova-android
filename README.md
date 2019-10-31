@@ -17,7 +17,7 @@ ssh into docker
 docker-compose exec cordova bash
 ```
 
-## Cordoca commands (inside container)
+## Cordova commands (inside container)
 
 > IMPORTANT all command in **/tmp** folder
 
@@ -27,6 +27,32 @@ cd /tmp
 cordova create MyApp
 cd MyApp
 ```
+
+### Browser (local app testing)  
+
+add platform browser  
+```
+cd /tmp/MyApp  
+cordova platform add browser  
+```
+
+run application in browser  
+```
+cd /tmp/MyApp  
+cordova run browser  
+```
+
+> output from run process  
+
+```
+Static file server running @ http://localhost:8000/index.html  
+CTRL + C to shut down  
+```
+
+> open http://localhost:8000/index.html  in your local browser (outside container)  
+
+
+### Android (app building)  
 
 add platform android
 ```
@@ -40,7 +66,7 @@ cd /tmp/MyApp
 cordova build android
 ```
 
-> output from build process
+> output from build process  
 
 ```
 BUILD SUCCESSFUL in 3m 19s
