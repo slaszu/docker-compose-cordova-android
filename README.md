@@ -77,10 +77,14 @@ Built the following apk(s):
 
 ## Android commands (outside container)
 
-run android emulator
+run android emulator (from Android Studio)
 ```
 open AndroidStudio application and run Tools > AVD Manager
 ```
+
+run android emulator (from cli)  
+https://stackoverflow.com/questions/4974568/how-do-i-launch-the-android-emulator-from-the-command-line  
+
 
 install app on android emulator
 ```
