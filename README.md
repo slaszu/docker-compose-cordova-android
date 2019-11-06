@@ -91,3 +91,21 @@ install app on android emulator
 /Users/.../Library/Android/sdk/platform-tools/adb install /Users/.../other/docker_cordova_android/build/MyApp/platforms/android/app/build/outputs/apk/debug/app-debug.apk
 ```
 
+## Update cordova (inside container)
+
+```
+npm install -g cordova
+```
+
+## Update android sdk (inside container)
+
+todo:  
+- update android sdk https://stackoverflow.com/questions/17963508/how-to-install-android-sdk-build-tools-on-the-command-line  
+
+- accept sdkmanager --licenses https://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences  
+
+
+```
+android update sdk -u
+```  
+> -u - from cli (do not show gui)
