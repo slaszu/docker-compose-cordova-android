@@ -2,8 +2,10 @@ version: "3.0"
 
 services:
     cordova:
-        build:
-            context: beevelop_cordova
+        build: 
+            context: https://github.com/slaszu/docker-cordova.git
+            args:
+                CORDOVA_VERSION: 9.0.0
         container_name: cordova
         volumes:
             - ./build:/tmp
