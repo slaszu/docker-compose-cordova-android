@@ -5,6 +5,8 @@ services:
         build: 
             context: https://github.com/slaszu/docker-cordova.git
             args:
+                ANDROID_BUILD_TOOLS_VERSION: 29.0.2
+                ANDROID_APIS: android-29
                 CORDOVA_VERSION: 9.0.0
         container_name: cordova
         volumes:

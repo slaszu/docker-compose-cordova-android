@@ -77,13 +77,14 @@ Built the following apk(s):
 
 ## Android commands (outside container)
 
+```
+/Users/.../Library/Android/sdk/emulator/emulator @API_28
+```
+
 run android emulator (from Android Studio)
 ```
 open AndroidStudio application and run Tools > AVD Manager
 ```
-
-run android emulator (from cli)  
-https://stackoverflow.com/questions/4974568/how-do-i-launch-the-android-emulator-from-the-command-line  
 
 
 install app on android emulator
@@ -99,13 +100,8 @@ npm install -g cordova
 
 ## Update android sdk (inside container)
 
-todo:  
-- update android sdk https://stackoverflow.com/questions/17963508/how-to-install-android-sdk-build-tools-on-the-command-line  
-
-- accept sdkmanager --licenses https://stackoverflow.com/questions/38096225/automatically-accept-all-sdk-licences  
-
-
 ```
-android update sdk -u
-```  
-> -u - from cli (do not show gui)
+cd /opt/android/tools/bin
+./sdkmanager --list
+./sdkmanager --update  #it need manual confirmation of licenses [y/n]
+```
