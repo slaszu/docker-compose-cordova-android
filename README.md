@@ -112,6 +112,7 @@ cd /opt/android/tools/bin
 In case of errors in middle of building process, please update android platform to latest
 
 ```
+cd /tmp/MyApp
 cordova platform remove android
 cordova platform add android@8.1.0
 ```
