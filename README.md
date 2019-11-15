@@ -105,3 +105,13 @@ cd /opt/android/tools/bin
 ./sdkmanager --list
 ./sdkmanager --update  #it need manual confirmation of licenses [y/n]
 ```
+
+
+## Update cordova platform android (inside container)
+
+In case of errors in middle of building process, please update android platform to latest
+
+```
+cordova platform remove android
+cordova platform add android@8.1.0
+```
